@@ -1,3 +1,10 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Гроссбух"><meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#0b6e6e">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font-size:14px}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>Мой гроссбух</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -186,6 +193,7 @@ tr.sub td{color:var(--muted)}
 details>summary{cursor:pointer;color:var(--accent);font-size:13px;font-weight:500;padding:4px 0}
 .sep{height:1px;background:var(--line);margin:4px 0}
 </style>
+</head><body>
 <div id="lock"></div>
 <div class="shell" id="shell" hidden>
   <aside class="side"><div class="brandrow"><div class="brand"><i>₿</i>Мой гроссбух</div><button type="button" class="btn sm ghost lockbtn" data-act="lock" aria-label="Заблокировать">Заблокировать</button></div><nav class="nav" id="nav" aria-label="Разделы"></nav></aside>
@@ -962,4 +970,5 @@ document.addEventListener('click',e=>{if(e.target.id==='modal')closeModal()});
   const raw=lsGet(STORE);showLock(raw?'unlock':'setup1');
 })();
 window.addEventListener('pagehide',()=>{if(S&&KEY)flush()});
-</script>
+
+</script></body></html>
